@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'u!vgjs=@rdo5)g0d(7f4!afjijiqpwjfniewnfpiewjofpfpwq*4kf%bc8)a8spc3j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['adjango01.herokuapp.com','127.0.0.1']
 
 
 # Application definition
